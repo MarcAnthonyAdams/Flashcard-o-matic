@@ -1,0 +1,104 @@
+{
+  "decks": [
+    {
+      "id": 1,
+      "name": "Rendering in React",
+      "description": "React's component structure allows for quickly building a complex web application that relies on DOM manipulation. "
+    },
+    {
+      "name": "React Router",
+      "description": "React Router is a collection of navigational components that compose declaratively with your application.",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "practice deck",
+      "description": "practice and practice again and again."
+    },
+    {
+      "id": 4,
+      "name": "practice deck 2",
+      "description": "again with the practice."
+    }
+  ],
+  "cards": [
+    {
+      "id": 1,
+      "front": "Differentiate between Real DOM and Virtual DOM.",
+      "back": "Virtual DOM updates are faster but do not directly update the HTML",
+      "deckId": 1
+    },
+    {
+      "id": 2,
+      "front": "How do you modify the state of a different React component?",
+      "back": "Not at all! State is visible to the component only.",
+      "deckId": 1
+    },
+    {
+      "id": 3,
+      "front": "How do you pass data 'down' to a React child component?",
+      "back": "As properties or props",
+      "deckId": 1
+    },
+    {
+      "front": "What path will match the follow Route?\n<Route>\n  <NotFound />\n</Route>",
+      "back": "All paths. A route with no path matches all URL's",
+      "deckId": 2,
+      "id": 4
+    },
+    {
+      "front": "What does <Switch> do?",
+      "back": "Renders the first matching child <Route> ",
+      "deckId": 2,
+      "id": 5
+    },
+    {
+      "front": "test1",
+      "back": "test1",
+      "id": 6,
+      "deckId": 3
+    },
+    {
+      "front": "test2",
+      "back": "test2",
+      "deckId": 3,
+      "id": 7
+    },
+    {
+      "id": 8,
+      "front": "test3.3",
+      "back": "test3.3",
+      "deckId": 3
+    },
+    {
+      "front": "test 4",
+      "back": "test 4",
+      "deckId": 3,
+      "id": 9
+    },
+    {
+      "id": 10,
+      "front": "test 1.3.5",
+      "back": "test 1.3.5",
+      "deckId": 4
+    },
+    {
+      "front": "test 4",
+      "back": "test 4",
+      "deckId": 4,
+      "id": 11
+    },
+    {
+      "front": "test 10",
+      "back": "test 10",
+      "deckId": 4,
+      "id": 12
+    },
+    {
+      "front": "test 11.1",
+      "back": "test 11.1",
+      "deckId": 4,
+      "id": 13
+    }
+  ]
+}
