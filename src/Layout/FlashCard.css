@@ -1,0 +1,21 @@
+.flashcard-container {
+    margin-top: 40px;
+    padding: 20px;
+    border: 2px solid #e9ecef;
+    border-radius: 5px;
+}
+
+.flashcard-btn-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.flip-btn {
+    padding: 0 5px 0 0;
+}
+
+.next-btn {
+    padding: 0 0 0 5px;
+}

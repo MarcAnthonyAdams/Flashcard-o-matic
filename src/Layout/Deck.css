@@ -1,0 +1,30 @@
+.deck-btn-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.deck-link-btns-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cards-container {
+    margin-top: 40px;
+}
+
+.edit-btn {
+    padding: 0 5px 0 0;
+}
+
+.study-btn {
+    padding: 0 5px 0 5px;
+}
+
+.add-cards-btn {
+    padding: 0 0 0 5px;
+}
+

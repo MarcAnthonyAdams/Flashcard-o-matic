@@ -1,0 +1,19 @@
+.create-edit-deck-btn-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.cancel-btn {
+    padding: 0 5px 0 0;
+}
+
+.submit-btn {
+    padding: 0 0 0 5px;
+}
+
+
+
+

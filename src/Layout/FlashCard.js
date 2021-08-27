@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
+import "./FlashCard.css";
 
 function FlashCard({ flashCards }) {
 
@@ -27,25 +28,31 @@ function FlashCard({ flashCards }) {
     };
     
     return (
-        <div>
-            <h5>Card {cardCount} of {cardTotal}</h5>
+        <div className="flashcard-container">
+            <h2>Card {cardCount} of {cardTotal}</h2>
             {flipped ? (
                 <div>
-                    <p>{cardBack[cardNum]}</p> 
-                    <button 
-                        type="button" 
-                        class="btn btn-secondary"
-                        onClick={flipHandler}
-                    >
-                        flip
-                    </button>
-                    <button 
-                        type="button" 
-                        class="btn btn-primary"
-                        onClick={cardHandler}
-                    >
-                        Next
-                    </button>
+                    <p>{cardBack[cardNum]}</p>
+                    <div className="flashcard-btn-container"> 
+                        <div className="flip-btn">
+                            <button 
+                                type="button" 
+                                class="btn btn-secondary"
+                                onClick={flipHandler}
+                            >
+                                flip
+                            </button>
+                        </div>
+                        <div className="next-btn">
+                            <button 
+                                type="button" 
+                                class="btn btn-primary"
+                                onClick={cardHandler}
+                            >
+                                Next
+                            </button>
+                        </div>
+                    </div>
                 </div>
             ) : (
                 <div>

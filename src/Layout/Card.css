@@ -1,0 +1,31 @@
+.card-container {
+    padding: 20px;
+    border: 2px solid #e9ecef;
+    border-radius: 5px;
+}
+
+.card-container:hover {
+    background-color: #e9ecef;
+}
+
+.card-btn-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.card-faces {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.edit-btn {
+    padding: 0 5px 0 0;
+}
+
+.delete-btn {
+    padding: 0 0 0 5px;
+}

@@ -10,10 +10,7 @@ import Deck from "./Deck.js";
 import EditDeck from "./EditDeck.js";
 import AddCard from "./AddCard.js";
 import EditCard from "./EditCard.js";
-
-
-
-
+import "./index.css";
 
 
 function Layout() {
@@ -22,7 +19,6 @@ function Layout() {
   const [ deck, setDeck ] = useState({});
   const [ card, setCard ] = useState({});
   
-
   useEffect(() => {
     setDecks([]);
     const abortController = new AbortController();
@@ -43,68 +39,70 @@ function Layout() {
 
   return (
     <div>
-      <Header />
-      <div className="container">
-        {/* TODO: Implement the screen starting here */} 
-        <Switch>
-          <Route exact path="/">
-            <Home decks={decks} deckRender={deckRender} setDeckRender={setDeckRender}/>
-          </Route>
-          <Route exact path={"/decks/new"}>
-            <CreateDeck
-              decks={decks}
-              setDecks={setDecks}  
-              deckRender={deckRender} 
-              setDeckRender={setDeckRender} 
-            />
-          </Route>
-          <Route exact path={"/decks/:deckId"}>
-            <Deck
-              deck={deck}
-              setDeck={setDeck}
-              deckRender={deckRender}
-              setDeckRender={setDeckRender}
-            />
-          </Route>
-          <Route exact path={"/decks/:deckId/study"}>
-            <Study 
-              deck={deck}
-              setDeck={setDeck}
-            />
-          </Route>
-          <Route exact path={"/decks/:deckId/edit"}>
-            <EditDeck
-              deck={deck}
-              setDeck={setDeck}
-              deckRender={deckRender}
-              setDeckRender={setDeckRender}
-            />
-          </Route>
-          <Route exact path={"/decks/:deckId/cards/new"}>
-            <AddCard
-              deck={deck}
-              setDeck={setDeck}
-              deckRender={deckRender}
-              setDeckRender={setDeckRender}
-            />
-            </Route>
-            <Route exact path={"/decks/:deckId/cards/:cardId/edit"}>
-              <EditCard
-                deck={deck}
-                setDeck={setDeck}
-                card={card}
-                setCard={setCard}
-                deckRender={deckRender}
-                setDeckRender={setDeckRender}
-              />
-            </Route>
-            <Route>
-              <NotFound />
-            </Route>
-          </Switch>       
-      </div>
+        <Header />
+        <div className="container">
+            {/* TODO: Implement the screen starting here */} 
+            <div className="app-body">
+                <Switch>
+                    <Route exact path="/">
+                        <Home decks={decks} deckRender={deckRender} setDeckRender={setDeckRender}/>
+                    </Route>
+                    <Route exact path={"/decks/new"}>
+                        <CreateDeck
+                            decks={decks}
+                            setDecks={setDecks}  
+                            deckRender={deckRender} 
+                            setDeckRender={setDeckRender} 
+                        />
+                    </Route>
+                    <Route exact path={"/decks/:deckId"}>
+                        <Deck
+                            deck={deck}
+                            setDeck={setDeck}
+                            deckRender={deckRender}
+                            setDeckRender={setDeckRender}
+                        />
+                    </Route>
+                    <Route exact path={"/decks/:deckId/study"}>
+                        <Study 
+                            deck={deck}
+                            setDeck={setDeck}
+                        />
+                    </Route>
+                    <Route exact path={"/decks/:deckId/edit"}>
+                        <EditDeck
+                            deck={deck}
+                            setDeck={setDeck}
+                            deckRender={deckRender}
+                            setDeckRender={setDeckRender}
+                        />
+                    </Route>
+                    <Route exact path={"/decks/:deckId/cards/new"}>
+                        <AddCard
+                            deck={deck}
+                            setDeck={setDeck}
+                            deckRender={deckRender}
+                            setDeckRender={setDeckRender}
+                        />
+                    </Route>
+                    <Route exact path={"/decks/:deckId/cards/:cardId/edit"}>
+                        <EditCard
+                            deck={deck}
+                            setDeck={setDeck}
+                            card={card}
+                            setCard={setCard}
+                            deckRender={deckRender}
+                            setDeckRender={setDeckRender}
+                        />
+                    </Route>
+                    <Route>
+                        <NotFound />
+                    </Route>
+                </Switch>
+            </div>       
+        </div>
     </div>
   );
-}
+};
 
 export default Layout;

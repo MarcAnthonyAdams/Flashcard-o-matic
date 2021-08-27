@@ -1,10 +1,44 @@
 .deck-container {
-    border: 2px solid black;
-};
+    padding: 20px;
+    border: 2px solid #e9ecef;
+    border-radius: 5px;
+}
 
-.deckName-cardCount-container {
-    align-items: center;
+.deck-container:hover {
+    background-color: #e9ecef;
+}
+
+.deck-card {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+
+.deck-btn-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.deck-link-btns-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.create-deck-btn {
+    margin: 20px 0 20px 0;
+}
+
+.view-btn {
+    padding: 0 5px 0 0;
+}
+
+.edit-btn {
+    padding: 0 0 0 5px;
+}
+
+

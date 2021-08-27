@@ -96,10 +96,10 @@ function Study({ deck, setDeck }) {
                         </ol>
                     </nav>
                 </div>
-                <h4>Study: {deck.name}</h4>
+                <h1>{deck.name}: Study</h1>
                 {cardCount < 3 ? (
                     <div>
-                        <h5>Not enough cards</h5>
+                        <h2>Not enough cards</h2>
                         <p>You need at least 3 cards to study.</p>
                         {cardCount === 1 ? (
                             <p>There is 1 card in this deck.</p>

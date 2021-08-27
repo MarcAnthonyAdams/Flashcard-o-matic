@@ -1,0 +1,17 @@
+.add-edit-card-btn-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.cancel-done-btn {
+    padding: 0 5px 0 0;
+}
+
+.submit-save-btn {
+    padding: 0 0 0 5px;
+}
+
+

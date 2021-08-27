@@ -1,0 +1,69 @@
+.app-body {
+     margin: 0 20% 0 20%;
+}
+
+ol {
+    padding-left: 0px;
+}
+
+ol li {
+  list-style: none;
+}
+
+input {
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+input::-webkit-input-placeholder {
+    color: grey;
+    padding: 10px;
+}
+  
+input:-moz-placeholder { /* Firefox 18- */
+    color: grey; 
+    padding: 10px;
+}
+  
+input::-moz-placeholder {  /* Firefox 19+ */
+    color: grey; 
+    padding: 10px;
+}
+  
+input:-ms-input-placeholder {
+    color: grey; 
+    padding: 10px;
+}
+  
+input::placeholder {
+    color: grey;
+    padding: 10px;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 5px;    
+}
+
+textarea::-webkit-input-placeholder {
+    color: grey;
+}
+  
+textarea:-moz-placeholder { /* Firefox 18- */
+    color: grey; 
+}
+  
+textarea::-moz-placeholder {  /* Firefox 19+ */
+    color: grey; 
+}
+  
+textarea:-ms-input-placeholder {
+    color: grey; 
+}
+  
+textarea::placeholder {
+    color: grey; 
+}
