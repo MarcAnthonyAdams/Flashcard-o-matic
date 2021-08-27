@@ -1,5 +1,6 @@
 import React from "react";
 import { useHistory, useParams } from "react-router-dom";
+import "./DeckForm.css";
 
 function DeckForm ({ formData, handleSubmit, handleChange}) {
 
@@ -27,19 +28,25 @@ function DeckForm ({ formData, handleSubmit, handleChange}) {
                     value={formData.description}
                     placeholder="Brief description of the deck"
                 />
-                <button 
-                    type="button" 
-                    class="btn btn-secondary"
-                    onClick={() => deckId ? history.push(`/decks/${deckId}`) : history.push("/")}
-                >
-                    Cancel
-                </button>
-                <button 
-                    type="submit"
-                    class="btn btn-primary"
-                >
-                    Submit
-                </button>
+                <div className="create-edit-deck-btn-container">
+                    <div className="cancel-btn">
+                        <button 
+                            type="button" 
+                            class="btn btn-secondary"
+                            onClick={() => deckId ? history.push(`/decks/${deckId}`) : history.push("/")}
+                        >
+                            Cancel
+                        </button>
+                    </div>
+                    <div className="submit-btn">
+                        <button 
+                            type="submit"
+                            class="btn btn-primary"
+                        >
+                            Submit
+                        </button>
+                    </div>
+                </div>
             </form>
         </div>
     )

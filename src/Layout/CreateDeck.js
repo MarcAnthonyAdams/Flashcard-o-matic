@@ -89,6 +89,7 @@ function CreateDeck({ decks, setDecks, deckRender, setDeckRender }) {
                 </nav>
             </div>
             <div>
+                <h1>Create Deck</h1>
                 <DeckForm 
                     formData={formData}
                     handleSubmit={handleSubmit}

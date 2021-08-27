@@ -1,5 +1,6 @@
 import React from "react";
 import { useHistory, useParams } from "react-router-dom";
+import "./CardForm.css";
 
 function CardForm ({ deckId, formData, handleSubmit, handleChange}) {
 
@@ -27,19 +28,25 @@ function CardForm ({ deckId, formData, handleSubmit, handleChange}) {
                     value={formData.back}
                     placeholder="Back side of card"
                 />
-                <button 
-                    type="button" 
-                    class="btn btn-secondary" 
-                    onClick={() => history.push(`/decks/${deckId}`)}
-                >
-                    {cardId ? "Cancel" : "Done"}
-                </button>
-                <button 
-                    type="submit"
-                    class="btn btn-primary"
-                >
-                    {cardId ? "Submit" : "Save"}
-                </button>
+                <div className="add-edit-card-btn-container">
+                    <div className="cancel-done-btn">
+                        <button 
+                            type="button" 
+                            class="btn btn-secondary" 
+                            onClick={() => history.push(`/decks/${deckId}`)}
+                        >
+                            {cardId ? "Cancel" : "Done"}
+                        </button>
+                    </div>
+                    <div className="submit-save-btn">
+                        <button 
+                            type="submit"
+                            class="btn btn-primary"
+                        >
+                            {cardId ? "Submit" : "Save"}
+                        </button>
+                    </div>
+                </div>
             </form>        
         </div>
     )
